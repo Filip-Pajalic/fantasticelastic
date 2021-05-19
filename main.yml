@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+  - name: Build docker image
+    docker_image:
+      name: test
+      source: build
+      build:
+        path: dockerFiles/filebeat
+      state: present
