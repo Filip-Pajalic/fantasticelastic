@@ -8,5 +8,13 @@
       name: test
       source: build
       build:
+        pull: yes
         path: dockerFiles/filebeat
       state: present
+
+  - name: Run docker image
+    docker_container:
+      image: test:latest
+      container_default_behavior: compatibility
+      name: test
+      state: started
