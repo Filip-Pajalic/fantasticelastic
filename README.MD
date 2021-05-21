@@ -11,3 +11,6 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 sudo apt-get update && sudo apt-get install vagrant
 
 https://www.vagrantup.com/downloads
+Need to install virtualbox as well
+also need image of virtual machine from hashicorp:
+https://app.vagrantup.com/centos/boxes/7
